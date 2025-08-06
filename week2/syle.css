@@ -1,0 +1,30 @@
+h1 {
+  color: blueviolet;
+  font-size: 32px;
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+h2 {
+  color: limegreen;
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.blue-color {
+  color: blue;
+}
+#purple-color,
+h3 {
+  color: purple;
+}
+section {
+  text-align: center;
+  border: 2px solid crimson;
+  margin-bottom: 20px;
+}
+h2 {
+  border: dashed green;
+}
