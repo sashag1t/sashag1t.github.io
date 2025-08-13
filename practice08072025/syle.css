@@ -1,0 +1,21 @@
+* {
+  color: green;
+}
+section {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.youtube {
+  background-color: rgb(146, 0, 0);
+  color: white;
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
