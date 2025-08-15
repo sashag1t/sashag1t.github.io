@@ -1,0 +1,17 @@
+body{
+    margin: 0px auto;
+}
+h1{
+    color: crimson;
+    text-align: center;
+    border: 2px blue dashed;
+    background-color: beige;
+    height: 100px;
+    align-items: center;
+    padding-top: 40px;
+}
+p{
+    margin: 20px auto;
+    border-color: crimson;
+    width: 300px;
+}
