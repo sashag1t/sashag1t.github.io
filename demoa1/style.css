@@ -15,3 +15,23 @@ p{
     border-color: crimson;
     width: 300px;
 }
+.container{
+    background-color: rgb(0, 56, 91);
+    border: crimson dashed 10px;
+    display: grid;
+    min-height: 50px;
+    min-width: 50px;
+
+}
+.box1{
+    background-color: yellow;
+    border: dashed white 5px;
+}
+.boxnho1{
+    background-color: blueviolet;
+    border: green;
+}
+.box2{
+    background-color:aqua;
+    border-top: 2px dashed orange;
+}
