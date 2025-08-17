@@ -96,3 +96,6 @@ ol{
     text-align: left;
     padding: 0.55rem;
 }
+#answ1{
+    max-width: max-content;
+}
