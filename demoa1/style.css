@@ -14,8 +14,10 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
+    z-index: 10;
+    width: 100%;
 }
 .left{
     margin-left: 3rem;
@@ -39,8 +41,9 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    position: sticky;
-    top: 3.1rem;
+    position: fixed;
+    top: 3rem;
+    z-index: 2;
 }
 .question_list{
     display: flex;
@@ -52,7 +55,7 @@ body{
     height: 100%; 
     /* padding-left: 0.5rem; */
     position: sticky;
-    top: 4rem;
+    top: 4.9rem;
     left: 15rem ;
     margin-top: 2rem;
     font-size: 1rem;
@@ -79,7 +82,7 @@ body{
     width: 64.9rem;
     padding-left: 1rem;
     margin-left: 20.1rem;
-    /* margin-top: 2.1rem;  */
+    margin-top: 2.1rem; 
     padding-top: 5rem;
     top: 5.2rem;
 }
