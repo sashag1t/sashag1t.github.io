@@ -26,6 +26,8 @@ body{
     text-align: left;
     padding-left: 0.2rem;
     min-height: 2rem;
+    font-size: 2rem;
+    color: crimson;
 }
 .right{
     margin-right: 3rem;
