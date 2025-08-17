@@ -16,7 +16,7 @@ body{
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 10;
+    /* z-index: 10; */
     width: 100%;
 }
 .left{
@@ -29,8 +29,9 @@ body{
 }
 .right{
     margin-right: 3rem;
-    border: 1px white solid;
+    /* border: 1px white solid; */
     padding-right: 0.2rem;
+    font-size: 2.5rem;
 }
 .navigation{
     background-color: grey;
@@ -43,7 +44,7 @@ body{
     width: 100%;
     position: fixed;
     top: 3rem;
-    z-index: 2;
+    /* z-index: 2; */
 }
 .question_list{
     display: flex;
@@ -53,14 +54,12 @@ body{
     flex-direction: column;
     max-width: 20rem;
     height: 100%; 
-    /* padding-left: 0.5rem; */
-    position: sticky;
-    top: 4.9rem;
+    position: fixed;
+    top: 3rem;
     left: 15rem ;
     margin-top: 2rem;
     font-size: 1rem;
     border-left: 0.1rem white solid;
-    /* text-align: left; */
 }
 .main{
     display: flex;
@@ -82,7 +81,7 @@ body{
     padding-left: 1rem;
     margin-left: 20.1rem;
     margin-top: 5rem; 
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 .q1{
     padding-top: 0.2rem;
