@@ -39,7 +39,8 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 3.1rem;
 }
 .question_list{
     display: flex;
@@ -51,7 +52,7 @@ body{
     height: 100%; 
     /* padding-left: 0.5rem; */
     position: sticky;
-    top: 4.9rem;
+    top: 4rem;
     left: 15rem ;
     margin-top: 2rem;
     font-size: 1rem;
@@ -80,6 +81,7 @@ body{
     margin-left: 20.1rem;
     /* margin-top: 2.1rem;  */
     padding-top: 5rem;
+    top: 5.2rem;
 }
 .q1{
     padding-top: 0.2rem;
