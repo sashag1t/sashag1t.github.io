@@ -2,7 +2,7 @@ body{
     margin: 0px auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(50, 50, 50);
 }
 .header{
     color: crimson;
@@ -77,7 +77,7 @@ body{
     background-color: rgb(0, 129, 129);
     /* height: 100rem;  */
     /* ti chinh height ve max height */
-    max-height: fit-content;
+    height: 300rem;
     width: 64.9rem;
     padding-left: 1rem;
     margin-left: 20.1rem;
@@ -105,109 +105,124 @@ ol{
     padding-right: 1rem;
     
 }
-.answ1{
+#answ1{
     max-width: max-content;
-    /* padding-top: 1rem; */
+    padding-top: 5rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    /* margin-top: -3rem; */
+    scroll-margin-top: -2rem;
 }
-.answ5{
+#answ5{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ2{
+#answ2{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    /* margin-top: -3rem; */
+    scroll-margin-top: 3rem;
 }
-.answ3{
+#answ3{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ4{
+#answ4{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ13{
+#answ13{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ6{
+#answ6{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ7{
+#answ7{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ9{
+#answ9{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ12{
+#answ12{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ8{
+#answ8{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ11{
+#answ11{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
-.answ10{
+#answ10{
     max-width: max-content;
     /* padding-top: 1rem; */
     padding-bottom: 1rem;
     padding-left: 3rem;
     padding-right: 4rem;
     font-size: 1.1rem;
+    scroll-margin-top: 3rem;
 }
 .screenshot{
     display: flex;
