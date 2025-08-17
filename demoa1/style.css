@@ -58,7 +58,7 @@ body{
     height: 100%; 
     position: fixed;
     top: 3rem;
-    left: 15rem ;
+    left: 12rem ;
     margin-top: 2rem;
     font-size: 1rem;
     border-left: 0.1rem white solid;
@@ -66,8 +66,8 @@ body{
 .main{
     display: flex;
     background-color: grey;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 12rem;
+    margin-right: 10rem;
     border-right: 1px white solid;
     justify-content: flex-start;
     width: 80rem;
@@ -77,16 +77,16 @@ body{
 }
 .content{
     background-color: rgb(0, 129, 129);
-    height: 100rem; 
+    /* height: 100rem;  */
     /* ti chinh height ve max height */
+    max-height: fit-content;
     width: 64.9rem;
     padding-left: 1rem;
     margin-left: 20.1rem;
     margin-top: 5rem; 
     padding-top: 2rem;
-}
-.q1{
-    padding-top: 0.2rem;
+    display: flex;
+    flex-direction: column;
 }
 ol{
     list-style-position: inside;
@@ -96,6 +96,118 @@ ol{
     text-align: left;
     padding: 0.55rem;
 }
-#answ1{
+.title{
+    font-size: 5rem;
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+.context{
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    
+}
+.answ1{
     max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ5{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ2{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ3{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ4{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ13{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ6{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ7{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ9{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ12{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ8{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ11{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
+}
+.answ10{
+    max-width: max-content;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    font-size: 1.1rem;
 }
