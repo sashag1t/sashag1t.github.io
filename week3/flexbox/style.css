@@ -20,7 +20,8 @@ body {
   border: 2px dashed #e5e5cb56;
   min-height: 100px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column; 
+  /* ->sap xep theo hang doc het */
   justify-content: center;
   align-items: end;
   gap: 5px;
