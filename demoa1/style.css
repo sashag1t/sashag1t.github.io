@@ -6,7 +6,9 @@ body{
 }
 .header{
     color: crimson;
-    border-bottom: 0.1rem white solid;
+    border-top: 0.1rem white solid;
+    border-left: 0.1rem white solid;
+    border-right: 0.1rem white solid;
     background-color: grey;
     height: 3rem;
     align-items: center;
@@ -16,7 +18,10 @@ body{
     justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 80rem;
+    margin-left: 12rem;
+    margin-right: 15rem;
+    /* border-radius: 1rem; */
 }
 .left{
     margin-left: 3rem;
@@ -31,29 +36,35 @@ body{
     margin-right: 3rem;
     /* border: 1px white solid; */
     padding-right: 0.2rem;
-    font-size: 2.5rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-family: "Coiny", sans-serif;
+    font-weight: 400;
+    padding-top: -2rem;
     
 }
 .navigation{
     background-color: grey;
-    border-bottom: 0.1rem white solid;
+    border: 0.1rem white solid;
     height: 2rem;
     display: flex;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 80rem;
     position: fixed;
     top: 3rem;
-    font-size: 1.1rem;
-    font-family: "Lato", serif;
+    font-optical-sizing: auto;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    margin-left: 12rem;
+    margin-right: 15rem;
+
 }
 .question_list{
     display: flex;
     background-color: rgb(0, 129, 129);
     border-right: 0.1rem white solid;
+    border-left: 0.1rem white solid;
     border-bottom: 0.1rem white solid;
     flex-direction: column;
     max-width: 20rem;
@@ -62,33 +73,38 @@ body{
     top: 3rem;
     left: 12rem ;
     margin-top: 2rem;
-    font-size: 1rem;
-    border-left: 0.1rem white solid;
+    font-size: 0.838rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 280;
 }
 .main{
     display: flex;
-    background-color: grey;
+    /* background-color: grey; */
     margin-left: 12rem;
     margin-right: 10rem;
-    border-right: 1px white solid;
+    /* border-right: 1px white solid; */
     justify-content: flex-start;
     width: 80rem;
     flex-direction: row;
     flex-wrap: wrap; 
     align-items: flex-start;
+    border-bottom: 0.1rem white solid;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
 }
 .content{
     background-color: rgb(0, 129, 129);
     /* height: 100rem;  */
     /* ti chinh height ve max height */
     height: 400rem;
-    width: 64.9rem;
+    width: 64.8rem;
     padding-left: 1rem;
-    margin-left: 20.1rem;
+    margin-left: 20rem;
     margin-top: 5rem; 
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
+    border-right: 0.1rem white solid;
 }
 ol{
     list-style-position: inside;
@@ -96,19 +112,27 @@ ol{
 .quest{
     border-bottom: 0.1rem white solid;
     text-align: left;
-    padding: 0.55rem;
+    padding: 0.48rem;
+    padding-bottom: 0.44rem;
+    padding-top: 0.435rem;
 }
 .title{
-    font-size: 5rem;
-    padding-top: 1.5rem;
+    font-size: 4.5rem;
+    padding-top: 1rem;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 }
 .context{
-    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
     /* color: rgb(85, 255, 232); */
+}
+.website{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
 }
 #answ1{
     max-width: max-content;
