@@ -2,7 +2,7 @@ body{
     margin: 0px auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(50, 50, 50);
+    background-color: #dbb68f;
 }
 .header{
     color: whitesmoke;
