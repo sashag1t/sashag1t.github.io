@@ -7,9 +7,9 @@ body{
 .header{
     color: whitesmoke;
     background-color: #ffb13c;
-    border-top: 0.1rem white solid;
-    border-left: 0.1rem white solid;
-    border-right: 0.1rem white solid;
+    border-top: 0.1rem whitesmoke solid;
+    border-left: 0.1rem whitesmoke solid;
+    border-right: 0.1rem whitesmoke solid;
     height: 3rem;
     align-items: center;
     display: flex;
@@ -43,8 +43,11 @@ body{
     
 }
 .navigation{
-    background-color: grey;
-    border: 0.1rem white solid;
+    color: whitesmoke;
+    background-color: #F75590;
+    /* border: 0.1rem white solid; */
+    border-left: 0.1rem whitesmoke solid;
+    border-right: 0.1rem whitesmoke solid;
     height: 2rem;
     display: flex;
     justify-content: center;
@@ -62,10 +65,11 @@ body{
 }
 .question_list{
     display: flex;
-    background-color: #00a896;
-    border-right: 0.1rem white solid;
-    border-left: 0.1rem white solid;
-    border-bottom: 0.1rem white solid;
+    /* background-color: #00a896; */
+    background-color: #4a8fe7;
+    /* border-right: 0.1rem white solid; */
+    border-left: 0.1rem whitesmoke solid;
+    border-bottom: 0.1rem whitesmoke solid;
     flex-direction: column;
     max-width: 20rem;
     height: 100%; 
@@ -73,9 +77,9 @@ body{
     top: 3rem;
     left: 12rem ;
     margin-top: 2rem;
-    font-size: 0.838rem;
+    font-size: 0.85rem;
     font-family: "Inter", sans-serif;
-    font-weight: 280;
+    font-weight: 300;
 }
 .main{
     display: flex;
@@ -88,12 +92,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap; 
     align-items: flex-start;
-    border-bottom: 0.1rem white solid;
+    border-bottom: 0.1rem whitesmoke solid;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
 }
 .content{
-    background-color: #00a896;
+    /* background-color: #00a896; */
+    background-color: #49BEAA;
     /* height: 100rem;  */
     /* ti chinh height ve max height */
     height: 400rem;
@@ -104,18 +109,25 @@ body{
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
-    border-right: 0.1rem white solid;
+    border-right: 0.1rem whitesmoke solid;
     color: whitesmoke;
 }
 ol{
     list-style-position: inside;
 }
 .quest{
-    border-bottom: 0.1rem white solid;
+    /* border-bottom: 0.1rem whitesmoke solid; */
     text-align: left;
     padding: 0.48rem;
-    padding-bottom: 0.44rem;
+    padding-bottom: 0.4rem;
     padding-top: 0.435rem;
+}
+.quest13{
+    border-bottom: 0.05rem whitesmoke solid;
+    text-align: left;
+    padding: 0.48rem;
+    padding-bottom: 0.53rem;
+    padding-top: 0.5rem;
 }
 .title{
     font-size: 4.5rem;
@@ -272,19 +284,20 @@ ol{
     /* justify-content: space-around; */
 }
 a:link {
-  color: rgb(0, 0, 0);
+  color: whitesmoke;
   text-decoration: none;
 }
 a:visited {
-  color: rgb(0, 0, 0);
+  color: whitesmoke;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(255, 0, 179);
+  /* color: rgb(255, 0, 179); */
+  color: rgb(9, 255, 0);
   text-decoration: none;
 }
 a:active {
-  color: rgb(9, 255, 0);
+  color: yellow;
   text-decoration: none;
 }
