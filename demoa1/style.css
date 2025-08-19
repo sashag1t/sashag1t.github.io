@@ -24,17 +24,26 @@ body{
     /* border-radius: 1rem; */
 }
 .left{
+    display: flex;
     margin-left: 3rem;
-    /* border: 1px white solid; */
-    width: 20rem;
-    text-align: left;
+    /* border: 1px whitesmoke solid; */
+    max-width: fit-content;
+    /* text-align: left; */
     padding-left: 0.2rem;
-    min-height: 2rem;
-    font-size: 2rem;
+    max-height: fit-content;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    gap: 0.3rem;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: -10rem;
+    margin-top: -0.5rem;
+    text-align: bottom;
 }
 .right{
     margin-right: 3rem;
-    /* border: 1px white solid; */
+    /* border: 1px whitesmoke solid; */
     padding-right: 0.2rem;
     font-size: 2.2rem;
     font-family: "Coiny", sans-serif;
