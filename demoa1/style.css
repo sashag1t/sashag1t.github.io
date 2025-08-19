@@ -1,8 +1,15 @@
+/* As you said in class that we should not repeating the question-to-answer arrangement, I decided to write everything in a format similar to a news webpage.
+Since the main content is too short to put in a box with long width, I decided to use 2 side bars so that the content would be fixed in the middle of the page,
+which would enhance visual attention from viewers. The reference is after this website layout: https://www.hltv.org/
+Also, when testing different layouts, I decided to use only the outer border as it makes the whole page look more solid. */
+/* For the color palette, I want a color palette that can reflect the vibe of the original website, so I looked for some bright color palettes.
+I mixed and tested the colors from 4 palette to get the best look. */
 body{
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     background-color: #dbb68f;
+    /* background-color: #ecebe4; */
 }
 .header{
     color: whitesmoke;
@@ -40,6 +47,8 @@ body{
     padding-top: -10rem;
     margin-top: -0.5rem;
     text-align: bottom;
+    /* For the left side, I decided to use this pixelated style of font to make it stand out and eventhough it has nothing to do with the content or the theme of the page 
+    and its contradiction with the right side, I still feel like it've created a balance with the other side (and an interesting look in general).*/
 }
 .right{
     margin-right: 3rem;
@@ -49,6 +58,7 @@ body{
     font-family: "Coiny", sans-serif;
     font-weight: 400;
     padding-top: -2rem;
+    /* I want to put something with a round soft look, which is similar to the original website's title.  */
     
 }
 .navigation{
@@ -65,13 +75,18 @@ body{
     width: 80rem;
     position: fixed;
     top: 3rem;
-    font-optical-sizing: auto;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
+    font-family: "Coiny", sans-serif;
+    font-weight: 50;
     margin-left: 12rem;
     margin-right: 15rem;
+    /* And I also use this font for the navigation bar due to similar reason. */
 
 }
+/* Since my page wil be displayed as a news webpage, I decided to put the question list on the side and use jump link to connect them with their answers.
+I refered this to the W3schools website layout as I found this position highly logical and work with my idea of using jump link.
+Also, I want the header, the navigation bar and the question list to be still visible when viewers scroll down, so I looked into a way called "On Scroll Header" on W3schools 
+(https://www.w3schools.com/howto/howto_js_sticky_header.asp) and applied it to the other two. 
+However, I had to overcome the challenge of overlaping element so I tested a few margin and padding and position over and over until I get the best result.  */
 .question_list{
     display: flex;
     /* background-color: #00a896; */
@@ -104,13 +119,15 @@ body{
     border-bottom: 0.1rem whitesmoke solid;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
+    /* As the header and navigation bar are all in sans-serift font, 
+    I use the similar for the main text so that the webpage looks more consistent. */
 }
 .content{
     /* background-color: #00a896; */
     background-color: #49BEAA;
-    /* height: 100rem;  */
-    /* ti chinh height ve max height */
-    height: 400rem;
+    height: 400rem; 
+    /* At first this was height: 100%; to stretch the height according to the browser's size 
+    but it didn't work well with the jump link for the last question so I had to put the biggest number possible. */
     width: 64.8rem;
     padding-left: 1rem;
     margin-left: 20rem;
@@ -130,6 +147,10 @@ ol{
     padding: 0.48rem;
     padding-bottom: 0.4rem;
     padding-top: 0.435rem;
+    /* At first I still kept the inner border so the list looked very tight and confusing and I had to adjust the padding a lot 
+    to not make the question exceed the bottom line of the brower as the list was in fixed position.
+    After decciding to get rid of the inner border, I had to balance among the padding so that it didn't leave any space behind.
+    That's why the number is weirdly odd.*/
 }
 .quest13{
     border-bottom: 0.05rem whitesmoke solid;
@@ -292,6 +313,9 @@ ol{
     padding-left: -10rem;
     /* justify-content: space-around; */
 }
+/* At first I didn't plan to style the link but it comes with underline and blue after activated, so it contradict the whole look heavily.
+Therefore I looked in to "CSS Style Links" and copy a part of code about "Styling Links Depending on State" on W3schools. 
+I only changed the color to my prefered ones.*/
 a:link {
   color: whitesmoke;
   text-decoration: none;
