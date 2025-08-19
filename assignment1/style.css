@@ -187,6 +187,9 @@ ol{
     /* margin-top: -3rem; */
     scroll-margin-top: -1.5rem;
 }
+/* There's a scroll-margin-top because when using jump link the first line of the answer got overlaped by the fixed navigation bar.
+So I looked for a solution and I learned to use scroll-margin-top on W3schools.
+The number may vary in each answer for the same distacne from the first line to the navigation bar after the jump. */
 #answ5{
     max-width: max-content;
     /* padding-top: 1rem; */
@@ -314,7 +317,7 @@ ol{
     /* justify-content: space-around; */
 }
 /* At first I didn't plan to style the link but it comes with underline and blue after activated, so it contradict the whole look heavily.
-Therefore I looked in to "CSS Style Links" and copy a part of code about "Styling Links Depending on State" on W3schools. 
+Therefore I looked in to "CSS Style Links" (https://www.w3schools.com/css/css_link.asp) and copy a part of code about "Styling Links Depending on State" on W3schools. 
 I only changed the color to my prefered ones.*/
 a:link {
   color: whitesmoke;
