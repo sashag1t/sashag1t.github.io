@@ -322,7 +322,7 @@ The number may vary in each answer for the same distacne from the first line to 
     padding-left: -10rem;
     /* justify-content: space-around; */
 }
-/* At first I didn't plan to style the link but it comes with underline and blue after activated, so it contradict the whole look heavily.
+/* At first I didn't plan to style the link but it comes with underline and blue after being activated, so it contradict the whole look heavily.
 Therefore I looked in to "CSS Style Links" (https://www.w3schools.com/css/css_link.asp) and copy a part of code about "Styling Links Depending on State" on W3schools. 
 I only changed the color to my prefered ones.*/
 a:link {
