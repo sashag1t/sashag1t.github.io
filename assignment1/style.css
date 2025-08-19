@@ -2,8 +2,14 @@
 Since the main content is too short to put in a box with long width, I decided to use 2 side bars so that the content would be fixed in the middle of the page,
 which would enhance visual attention from viewers. The reference is after this website layout: https://www.hltv.org/
 Also, when testing different layouts, I decided to use only the outer border as it makes the whole page look more solid. */
+
 /* For the color palette, I want a color palette that can reflect the vibe of the original website, so I looked for some bright color palettes.
-I mixed and tested the colors from 4 palette to get the best look. */
+I mixed and tested the colors from 4 palette to get the best look.
+Links of the color palettes:
+https://coolors.co/palette/f75590-fce4d8-fbd87f-b5f8fe-10ffcb
+http://coolors.co/palette/73fbd3-44e5e7-59d2fe-4a8fe7-5c7aff
+https://coolors.co/palette/ef767a-456990-49beaa-49dcb1-eeb868
+https://coolors.co/palette/0892a5-06908f-0ca4a5-dbb68f-bb7e5d */
 body{
     margin: 0px auto;
     display: flex;
@@ -58,7 +64,7 @@ body{
     font-family: "Coiny", sans-serif;
     font-weight: 400;
     padding-top: -2rem;
-    /* I want to put something with a round soft look, which is similar to the original website's title.  */
+    /* I want to put something with a round border, which is similar to the original website's title. Therefore I chose this kind of bubbly font.*/
     
 }
 .navigation{
