@@ -106,16 +106,24 @@ for (let i = 0; i < student.length; i++) {
 // }
 let shoppingCart = 
 [
-  {name: "t shirt", price: 20}
-  {name: "jean", price: 50}
-  {name: "pant", price: 30}
-  {name: "short", price: 40}
+  {name: "t shirt", price: 20},
+  {name: "jean", price: 50},
+  {name: "pant", price: 30},
+  {name: "short", price: 40},
 ];
 console.log("shopping array size", shoppingCart.length);
 let cartTotal = 0;
 for (let i = 0; i < shoppingCart.length; i++) 
   {
     cartTotal = cartTotal + shoppingCart[i].price;
+    console.log("my purchased item is", shoppingCart[i].name);
+    console.log("its price is", shoppingCart[i].price);
   console.log("value of i", i);
   console.log("total o far", cartTotal);
+}
+if (cartTotal>200)
+{
+  console.log("ypu get discount");
+} else {
+  console.log("buy more to get discount")
 }
