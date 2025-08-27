@@ -54,9 +54,14 @@ const myImg = document.querySelector("img");
 console.log(myImg);
 myImg.addEventListener("mouseenter", addMe);
 myImg.addEventListener("mouseleave", removeMe);
+myImg.addEventListener("click", handleClick);
 function addMe() {
   myImg.classList.remove("round");
 }
 function removeMe() {
   myImg.classList.remove("round");
+}
+
+function handleClick() {
+  console.log("did u just click me?");
 }
