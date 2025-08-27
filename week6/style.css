@@ -1,0 +1,16 @@
+.para-style {
+  background-color: aqua;
+  border: 1px greenyellow solid;
+  padding: 10px;
+}
+image {
+  display: block;
+}
+button {
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 20px;
+}
+.round {
+  border-radius: 50%;
+}
