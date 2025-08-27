@@ -10,6 +10,14 @@ topHeading.style.color = "red";
 const firstPara = document.querySelector("p");
 console.log(firstPara);
 console.log(firstPara.textContent);
+// firstPara.innerHTML += "<span> New  element </span>" --> add content to html
+
+const mySection = document.querySelector("section");
+console.log(mySection);
+let myNewContent = `
+<h2> this is a image of a cat </h2>
+<p> do you like it </p>`;
+mySection.innerHTML += myNewContent;
 
 const h2Heading = document.querySelector("#second-heading");
 console.log(h2Heading);
@@ -21,8 +29,8 @@ console.log(allParas);
 
 for (let i = 0; i < allParas.length; i++) {
   console.log("Para", i + 1, ":", allParas[i].textContent);
-  allParas[i].style.backgroundColor = "limegreen";
-  //   allParas.classList.add("para-style");
+  //   allParas[i].style.backgroundColor = "limegreen";
+  allParas[i].classList.add("para-style");
 }
 
 const allAnother = document.querySelectorAll(".another");
@@ -40,4 +48,15 @@ function toggleMe() {
   const myImg = document.querySelector("img");
   console.log(myImg);
   myImg.classList.toggle("round");
+}
+
+const myImg = document.querySelector("img");
+console.log(myImg);
+myImg.addEventListener("mouseenter", addMe);
+myImg.addEventListener("mouseleave", removeMe);
+function addMe() {
+  myImg.classList.remove("round");
+}
+function removeMe() {
+  myImg.classList.remove("round");
 }
