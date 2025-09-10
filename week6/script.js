@@ -4,7 +4,7 @@ console.log(topHeading.textContent);
 topHeading.textContent = "day moi la topHeading";
 // -->thay doi html tu javascript
 // textContent show phan ben trong tag
-// querySelector = chon cu the wothin document;
+// querySelector = chon cu the within document;
 topHeading.style.color = "red";
 // --> stye heading luon
 const firstPara = document.querySelector("p");
