@@ -86,7 +86,7 @@ body{
 #progress-bar{
     width: 20rem;
     height: 0.5rem;
-    background-color: #2b2b2b;
+    background-color: #ff0000;
     /* padding-top: 1rem; */
 }
 .volume-lyric{
@@ -176,11 +176,11 @@ padding-top: 1rem;
 .track-info{
 padding-left: 1rem;
 }
-.track-name-1{
-    font-size: 1.5rem;
+.track-name{
+    font-size: 1.25rem;
 }
  .feature{
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding-left: 1rem;
  }
 .website{
