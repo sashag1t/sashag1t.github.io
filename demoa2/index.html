@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Coiny&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&display=swap"
         rel="stylesheet">
+    <script src="script.js" defer></script>
 
 <body>
     <div class="navigation">
@@ -50,11 +51,10 @@
                 </div>
                 <div id="middle-section">
                     <div id="cover-img">
-                        <img src="TDMovieOut2.0.png" alt="album-cover"
-                            style="width: 2.5rem;height: 2.5rem;border: 0.1rem solid white;">
+                        <img src="TDMovieOut2.0.png" alt="album-cover" style="width: 2.5rem;height: 2.5rem;">
                     </div>
                     <div id="info-progress">
-                        <div id="info">
+                        <div id="info-header">
                             <h1 id="song-name"> Hes</h1>
                             <h2 id="artist">P-Hase</h2>
                         </div>
@@ -88,39 +88,45 @@
                         <ol class="playlist">
                             <li class="track">
                                 <div class="info-left">
-                                    <button id="play-button-1">
+                                    <button id="play-button-1" onclick="playAudio1()">
                                         <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-1"
                                             style="width: 1.25rem;height: 1.25rem;">
                                     </button>
+                                    <audio id="track1"
+                                        src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Hes.mp3"></audio>
                                     <div class="track-info">
-                                        <h1 class="track-name">1. Hes</h1>
-                                        <h2 class="feature">P-Hase</h2>
+                                        <h1 class="track-name-1">1. Hes</h1>
+                                        <h2 class="feature-1">P-Hase</h2>
                                     </div>
                                 </div>
                                 <div class="duration">1:51</div>
                             </li>
                             <li class="track">
                                 <div class="info-left">
-                                    <button id="play-button-2">
+                                    <button id="play-button-2" onclick="playAudio2()">
                                         <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-1"
-                                            style="width: 1.25rem;height: 1.25rem;border: 0.1rem white solid;">
+                                            style="width: 1.25rem;height: 1.25rem;">
+                                        <audio id="track2"
+                                            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Dry-Down-feat-Ben-Snaath.mp3"></audio>
                                     </button>
                                     <div class="track-info">
-                                        <h1 class="track-name">2. Dry Down featuring Ben Snaath</h1>
-                                        <h2 class="feature">P-Hase, Ben Snaath</h2>
+                                        <h1 class="track-name-2">2. Dry Down featuring Ben Snaath</h1>
+                                        <h2 class="feature-2">P-Hase, Ben Snaath</h2>
                                     </div>
                                 </div>
                                 <div class="duration">1:50</div>
                             </li>
                             <li class="track">
                                 <div class="info-left">
-                                    <button id="play-button-3">
-                                        <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-1"
-                                            style="width: 1.25rem;height: 1.25rem;border: 0.1rem white solid;">
+                                    <button id="play-button-3" onclick="playAudio3()">
+                                        <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-3"
+                                            style="width: 1.25rem;height: 1.25rem;">
+                                        <audio id="track3"
+                                            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Leapt.mp3"></audio>
                                     </button>
                                     <div class="track-info">
-                                        <h1 class="track-name">3. Leapt</h1>
-                                        <h2 class="feature">P-Hase</h2>
+                                        <h1 class="track-name-3">3. Leapt</h1>
+                                        <h2 class="feature-3">P-Hase</h2>
                                     </div>
                                 </div>
                                 <div class="duration">1:36</div>
@@ -129,11 +135,11 @@
                                 <div class="info-left">
                                     <button id="play-button-4">
                                         <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-1"
-                                            style="width: 1.25rem;height: 1.25rem;border: 0.1rem white solid;">
+                                            style="width: 1.25rem;height: 1.25rem;">
                                     </button>
                                     <div class="track-info">
-                                        <h1 class="track-name">4. Water Feature</h1>
-                                        <h2 class="feature">P-Hase</h2>
+                                        <h1 class="track-name-4">4. Water Feature</h1>
+                                        <h2 class="feature-4">P-Hase</h2>
                                     </div>
                                 </div>
                                 <div class="duration">0:55</div>

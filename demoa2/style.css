@@ -69,15 +69,16 @@ body{
 }
 #cover-img{
     padding-top: 1rem;
+    padding-bottom: 0.6rem;
 }
 #info-progress{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding-left: 1rem; */
+    /* padding-left: 0.01rem; */
 }
-#info{
+#info-header{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,6 +163,7 @@ padding-top: 1rem;
     padding-left: 5rem;
     padding-right: 5rem;
 }
+
 .track{
     display: flex;
     flex-direction: row;
@@ -172,14 +174,36 @@ padding-top: 1rem;
 .info-left{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .track-info{
 padding-left: 1rem;
 }
-.track-name{
+.track-name-1{
     font-size: 1.25rem;
 }
- .feature{
+.track-name-2{
+    font-size: 1.25rem;
+}
+.track-name-3{
+    font-size: 1.25rem;
+}
+.track-name-4{
+    font-size: 1.25rem;
+}
+ .feature-1{
+    font-size: 1rem;
+    padding-left: 1rem;
+ }
+  .feature-2{
+    font-size: 1rem;
+    padding-left: 1rem;
+ }
+  .feature-3{
+    font-size: 1rem;
+    padding-left: 1rem;
+ }
+  .feature-4{
     font-size: 1rem;
     padding-left: 1rem;
  }
