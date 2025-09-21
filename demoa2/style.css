@@ -2,41 +2,32 @@
 body{
     margin: 0px auto;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #2b2b2b;
-}
-.controller{
-    display: flex;
-    height: 10vh;
-    width: 100vw;
-    background-color: aqua;
-    color: black;
-    align-items: center;
-    justify-content: center;
-}
-.container{
-    display: flex;
-    height: 90vh;
-    width: 100vw;
     flex-direction: row;
-    flex-wrap: wrap;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
+    background-color: #2b2b2b;
 }
 .navigation{
     color: whitesmoke;
     background-color: #F75590;
     border-right: 0.1rem whitesmoke solid;
-    height: 100%;
-    width: 15%;
+    height: 100vh;
+    width: 15vw;
     display: flex;
     flex-direction: column;
-    padding-top: 3rem; 
-    padding-left: 3rem;
+    /* padding-top: 3rem;  */
+    /* padding-left: 3rem; */
+}
+.logo{
+    padding-left: 1rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+.under{
+    padding-left: 2rem;
+    font-size: 2rem;
 }
 .home{
     padding: 1rem;
+    padding-top: 4rem;
 }
 .about{
     padding: 1rem;
@@ -47,10 +38,78 @@ body{
 .shop{
     padding: 1rem;
 }
+.controller{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    background-color: aqua;
+    color: black;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+}
+.control{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    /* border: white solid 0.1rem; */
+    width: 10rem;
+}
+
+#middle-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#cover-img{
+    padding-top: 1rem;
+}
+#info-progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 1rem; */
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#progress-bar{
+    width: 20rem;
+    height: 0.5rem;
+    background-color: #2b2b2b;
+    /* padding-top: 1rem; */
+}
+.volume-lyric{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 5rem;
+    align-items: baseline;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 85vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
 .main{
-    background-color: #101010;
-    height: 100%;
-    width: 85%;
+    background-color: #aeaeae;
+    height: 90%;
+    width: 100%;
     /* padding-top: 5rem; */
     /* padding-left: 1rem; */
     justify-content: center;
@@ -63,15 +122,15 @@ body{
 .left{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     height: 100%;
     border: 0.1rem white solid;
 }
 .title{
     display: flex;
-    padding-top: 1rem;
+    padding-top: 3rem;
     padding-bottom: 4rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
@@ -79,29 +138,51 @@ body{
 #album-cover-img{
     border: 0.1rem white solid;
 }
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
 .album-name{
-    font-size: 7rem;
+    font-size: 4rem;
+}
+.artist-name{
+font-size: 1.5rem;
+padding-top: 1rem;
 }
 .right{
     display: flex;
     border: 0.1rem white solid;
-    width: 30%;
+    width: 25%;
     height: 100%;
-}
-#album-cover-img{
 }
 .playlist{
     display: flex;
     flex-direction: column;
     padding-left: 5rem;
+    padding-right: 5rem;
 }
-.context{
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    /* padding-bottom: 1rem;
-    padding-right: 1rem; */
-    /* color: rgb(85, 255, 232); */
+.track{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 2rem;
 }
+.info-left{
+    display: flex;
+    flex-direction: row;
+}
+.track-info{
+padding-left: 1rem;
+}
+.track-name-1{
+    font-size: 1.5rem;
+}
+ .feature{
+    font-size: 0.75rem;
+    padding-left: 1rem;
+ }
 .website{
     font-family: "Inter", sans-serif;
     font-size: 1rem;
