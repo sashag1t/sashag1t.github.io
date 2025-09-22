@@ -69,14 +69,13 @@ body{
 }
 #cover-img{
     padding-top: 1rem;
-    padding-bottom: 0.6rem;
 }
 #info-progress{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    /* padding-left: 0.01rem; */
+    padding-left: 0.01rem;
 }
 #info-header{
     display: flex;
@@ -84,11 +83,18 @@ body{
     justify-content: center;
     align-items: center;
 }
-#progress-bar{
+#progress-bar-container{
     width: 20rem;
     height: 0.5rem;
-    background-color: #ff0000;
-    /* padding-top: 1rem; */
+    background-color: #282828;
+    overflow: hidden;
+}
+#progress-bar-fill{
+    display: block;
+    height: 0.5rem;
+    background-color: rgb(0, 102, 255);
+    width: 0;
+    transition: width 0.3 ease;
 }
 .volume-lyric{
     display: flex;
@@ -153,6 +159,8 @@ padding-top: 1rem;
 }
 .right{
     display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
     border: 0.1rem white solid;
     width: 25%;
     height: 100%;

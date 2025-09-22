@@ -32,13 +32,13 @@
                 <div class="controller">
                     <div>
                         <button id="previous-song-button">
-                            <img src="https://img.icons8.com/ios-glyphs/30/fast-forward.png" alt="previous-song-button"
+                            <img src="https://img.icons8.com/ios-glyphs/30/rewind.png" alt="previous-song-button"
                                 style="width: 1.75rem;height: 1.75rem;">
                         </button>
                     </div>
                     <div>
                         <button id="play-pause-button">
-                            <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button"
+                            <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt=""
                                 style="width: 1.75rem;height: 1.75rem;" id="play-pause-img">
                         </button>
                     </div>
@@ -51,15 +51,18 @@
                 </div>
                 <div id="middle-section">
                     <div id="cover-img">
-                        <img src="TDMovieOut2.0.png" alt="album-cover" style="width: 2.5rem;height: 2.5rem;">
+                        <img src="TDMovieOut2.0.png" alt="album-cover"
+                            style="width: 2.5rem;height: 2.5rem;border-radius: 2px;">
                     </div>
                     <div id="info-progress">
                         <div id="info-header">
-                            <audio id="my-audio" src=""></audio>
-                            <h1> <span id="current-song-name"></span>Hes</h1>
-                            <h2> <span id="current-song-artist"></span>P-Hase</h2>
+                            <audio id="my-audio">
+                                <source src="" type="audio/mp3">
+                            </audio>
+                            <h1> <span id="current-song-name"></span></h1>
+                            <h2> <span id="current-song-artist"></span></h2>
                         </div>
-                        <div id="progress-bar"></div>
+                        <div id="progress-bar-container"><span id="progress-bar-fill"></span></div>
                     </div>
                 </div>
                 <div class="volume-lyric">
@@ -73,7 +76,7 @@
                                 style="width: 1.25rem;height: 1.25rem;" id="volume-up-img">
                         </button>
                         <button id="mute-unmute-button">
-                            <img src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png" alt="mute-button"
+                            <img src="https://img.icons8.com/ios-glyphs/30/high-volume--v2.png" alt="mute-button"
                                 style="width: 1.25rem;height: 1.25rem;" id="mute-unmute-img">
                         </button>
                         <button id="lyric-button">
@@ -101,7 +104,6 @@
                                         <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-1"
                                             style="width: 1.25rem;height: 1.25rem;">
                                     </button>
-                                    <audio id="my-audio" src=""></audio>
                                     <div class="track-info">
                                         <h1 class="track-name-1">1. Hes</h1>
                                         <h2 class="feature-1">P-Hase</h2>
@@ -114,7 +116,6 @@
                                     <button id="play-button-2">
                                         <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-1"
                                             style="width: 1.25rem;height: 1.25rem;">
-
                                     </button>
                                     <div class="track-info">
                                         <h1 class="track-name-2">2. Dry Down featuring Ben Snaath</h1>
@@ -128,7 +129,6 @@
                                     <button id="play-button-3">
                                         <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-3"
                                             style="width: 1.25rem;height: 1.25rem;">
-
                                     </button>
                                     <div class="track-info">
                                         <h1 class="track-name-3">3. Leapt</h1>
@@ -142,7 +142,6 @@
                                     <button id="play-button-4">
                                         <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" alt="play-button-1"
                                             style="width: 1.25rem;height: 1.25rem;">
-
                                     </button>
                                     <div class="track-info">
                                         <h1 class="track-name-4">4. Water Feature</h1>
@@ -156,7 +155,14 @@
                     </div>
                 </div>
                 <div class="right">
-                    Website: SCULPTING HARMONY
+                    <p class="lyric">Lorem ipsum dolor sit.</p>
+                    <p class="lyric">amet consectetur adipisicing elit. Doloribus, asperiores?</p>
+                    <p class="lyric">Perspiciatis, maiores.</p>
+                    <p class="lyric">Lorem ipsum dolor sit amet.</p>
+                    <p class="lyric">Illo animi aspernatur eligendi similique culpa iste.</p>
+                    <p class="lyric">Quae non quas quis sequi enim eveniet quia cum placeat! Pariatur, reprehenderit.
+                    </p>
+                    <p class="lyric">Aspernatur nemo possimus vero quisquam tempore rem tenetur nostrum.</p>
                 </div>
             </div>
         </main>
