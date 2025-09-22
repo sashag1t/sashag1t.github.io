@@ -38,7 +38,7 @@ body{
 .shop{
     padding: 1rem;
 }
-.controller{
+.header{
     display: flex;
     flex-direction: row;
     height: 10%;
@@ -51,7 +51,7 @@ body{
     /* justify-content: flex-start; */
     /* justify-content: center; */
 }
-.control{
+.controller{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
