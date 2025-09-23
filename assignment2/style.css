@@ -1,4 +1,4 @@
-/* I want to create a design that goes well with the vibe of the whole album, which is kind of a ambient sound wave. Therefore, I decided to choose dark grey for the background color, some sections are highlighted with lighter grey. I think the almost monochrome palette matches the atmosphere of all the songs perfectly. I have also created an albumm cover with the similar aim but I made it in blue so that it's the most eye-catching element in the whole layout. I have come to this decision after looking into Apple Music and Spotify web player's design approach.*/
+/* I want to create a design that goes well with the vibe of the whole album, which is kind of a ambient sound wave. Therefore, I decided to choose dark grey for the background color, some sections are highlighted with lighter grey. I think the almost-monochrome palette matches the atmosphere of all the songs perfectly. I have also created an albumm cover with the similar aim but I made it in blue so that it's the most eye-catching element in the whole layout. I have come to this decision after looking into Apple Music and Spotify web player's design approach.*/
 
 body{
     margin: 0px auto;
@@ -194,7 +194,7 @@ button{
     font-size: 1.5rem;
     padding-top: 1rem;
 }
-/* For the right side of the main section, I decided to highlight it a bit with a slightly lighter grey shade as a suggestion that it's created to show something so that users will interact to find out. My initial intention was that the right box only change color  */
+/* For the right side of the main section, I decided to add some highlight by changing background color slightly when the text appears.  */
 .right{
     display: flex;
     flex-direction: column;
@@ -228,7 +228,7 @@ button{
     padding-right: 5rem;
 }
 
-/* For the playlist section I want to add some highlight among the tracks so I divided them into odd and even */
+/* For the playlist section I want to add some highlight among the tracks so I divided them into odd and even section */
 .track-odd{
     display: flex;
     flex-direction: row;

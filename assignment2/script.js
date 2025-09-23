@@ -162,7 +162,7 @@ function increaseVolume(){
     }
 }
 
-// This is the part I intended to do the lyric animation which are similar to the karaoke lyrics or those on Apple Music or Spotify, but it didn't work out as I expected. The right side is meant to contain "About artist" and the lyric animation but the later didn't work eventually. 
+// This is the part I intended to do the lyric animation which are similar to the karaoke lyrics or those on Apple Music or Spotify, but it didn't work out as I expected. The right side is meant to contain "About artist" and the lyric animation but the later didn't work eventually. I tried with different logics but there was somehting still missing as a key connection between those logics. 
 
 // // lyric animation
 // const lyricData = [
@@ -177,13 +177,16 @@ function increaseVolume(){
 // console.log(lyricButton);
 // lyricButton.addEventListener("click", lyricDisplay);
 // const lyricContainer = document.querySelector(".lyric-container");
-
 // function lyricDisplay(i) {
-//     for (let currentLyric = 0; currentLyric < lyricData.length; currentLyric++ ) {
-//         myAudio.currentTime = lyricData[currentLyric].time
+//     /*for (let currentLyric = 0; currentLyric < lyricData.length; currentLyric++ ) {*/
+//       if  (myAudio.currentTime === lyricData[currentLyric].time0{
 //     lyricContainer.textContent = lyricData[currentLyric].text;
 //     }
 // }
+
+
+
+
 
 // const audioLyric = trackList[2];
 // console.log(audioLyric);
