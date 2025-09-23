@@ -1,12 +1,14 @@
+// I covered all the basic function of a media player. Some additional functions I made is the "About artist" button and the small now-playing indicator on the header. 
+ 
 const trackList = [
-    { name: "Hes", feature: "P-Hase", src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Hes.mp3"},
-    { name: "Dry Down", feature: "P-Hase feat Ben Snaath", src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Dry-Down-feat-Ben-Snaath.mp3"},
-    {name: "Leapt", feature: "P-Hase", src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Leapt.mp3"},
-    {name: "Water Feature", feature: "P-Hase", src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Water-Feature.mp3"}
+    { name: "Hes", feature: "P - Hase", src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Hes.mp3"},
+    { name: "Dry Down", feature: "P - Hase feat Ben Snaath", src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Dry-Down-feat-Ben-Snaath.mp3"},
+    {name: "Leapt", feature: "P - Hase", src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Leapt.mp3"},
+    {name: "Water Feature", feature: "P - Hase", src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Water-Feature.mp3"}
 ];
 
 const myAudio = document.querySelector("#my-audio");
-
+  
 // // Play button track 1
 const playButton1 = document.querySelector("#play-button-1");
 console.log(playButton1);
@@ -61,10 +63,10 @@ console.log(playPauseImg);
 function toggleAudio() {
     if (myAudio.paused || myAudio.ended) {
         myAudio.play();
-        playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v2.png";
-    } else {
+        playPauseImg.src = "https://img.icons8.com/material-rounded/24/FFFFFF/pause.png";
+    }else {
         myAudio.pause();
-        playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v2.png";
+        playPauseImg.src = "https://img.icons8.com/sf-regular-filled/48/FFFFFF/play.png";
     }
 }
 
@@ -87,10 +89,10 @@ muteUnmuteButton.addEventListener("click", toggleSound);
 function toggleSound() {
     if (myAudio.muted) {
         myAudio.muted = false;
-        muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/high-volume--v2.png";
+        muteUnmuteImg.src = "https://img.icons8.com/sf-black-filled/64/FFFFFF/high-volume.png";
     } else {
         myAudio.muted = true;
-        muteUnmuteImg.src = "https://img.icons8.com/ios-glyphs/30/no-audio--v1.png";
+        muteUnmuteImg.src = "https://img.icons8.com/material-rounded/24/FFFFFF/no-audio--v1.png";
     }
 }
 
@@ -110,12 +112,16 @@ function previousTrack() {
     currentIndex = (currentIndex - 1 + trackList.length) % trackList.length;
     console.log(currentIndex);
     playAudioAtIndex(currentIndex);
+    currentSong.textContent = trackList[currentIndex].name;
+    currentFeature.textContent = trackList[currentIndex].feature;
 }
 
 function nextTrack() {
     currentIndex = (currentIndex + 1) % trackList.length;
     console.log(currentIndex);
     playAudioAtIndex(currentIndex);
+    currentSong.textContent = trackList[currentIndex].name;
+    currentFeature.textContent = trackList[currentIndex].feature;
 }
 
 // function to play audio at specific index
@@ -156,16 +162,9 @@ function increaseVolume(){
     }
 }
 
+// This is the part I intended to do the lyric animation which are similar to the karaoke lyrics or those on Apple Music or Spotify, but it didn't work out as I expected. The right side is meant to contain "About artist" and the lyric animation but the later didn't work eventually. 
+
 // // lyric animation
-// const lyricButton = document.querySelector("#lyric-button");
-// console.log(lyricButton);
-// lyricButton.addEventListener("click", lyricDisplay);
-
-// const lyricContainer = document.querySelector(".lyric-container");
-
-// const audioLyric = trackList[2];
-// console.log(audioLyric);
-
 // const lyricData = [
 //     {time: 14, text: "Lorem ipsum dolor sit."},
 //     {time: 20, text: "amet consectetur adipisicing elit. Doloribus, asperiores?"},
@@ -174,7 +173,28 @@ function increaseVolume(){
 //     {time: 30, text: "Illo animi aspernatur eligendi similique culpa iste."},
 //     {time: 35, text: "Quae non quas quis sequi enim eveniet quia cum placeat! Pariatur reprehenderit."},
 // ];
-// let currentLyric = 0;
+// const lyricButton = document.querySelector("#lyric-button");
+// console.log(lyricButton);
+// lyricButton.addEventListener("click", lyricDisplay);
+// const lyricContainer = document.querySelector(".lyric-container");
+
+// function lyricDisplay(i) {
+//     for (let currentLyric = 0; currentLyric < lyricData.length; currentLyric++ ) {
+//         myAudio.currentTime = lyricData[currentLyric].time
+//     lyricContainer.textContent = lyricData[currentLyric].text;
+//     }
+// }
+
+// const audioLyric = trackList[2];
+// console.log(audioLyric);
+// myAudio.addEventListener("timeupdate", updateLyricHighlight);
+
+// function updateLyricHighlight() {
+//     const value2 = (myAudio.currentTime / myAudio.duration) * 100;
+//     progressBar.style.height = value2 + "%";
+// }
+
+
 
 // audioLyric.addEventListener("timeupdate", lyricDisplay);
 
@@ -184,11 +204,14 @@ function increaseVolume(){
     
 // }}
 
+
+// About artist button
+// For this button, I also want to highlight the information that will appear so I make it slightly change background color when it's shown. 
 const aboutArtistButton = document.querySelector("#about-artist");
 console.log(aboutArtistButton);
 aboutArtistButton.addEventListener("click", aboutArtistDisplay);
 
-const aboutArtistContainer = document.querySelector("#about-artist-container");
+const aboutArtistContainer = document.querySelector(".right");
 console.log(aboutArtistContainer)
 
 const infoArtist = document.querySelector("#info-artist").textContent;
@@ -196,4 +219,5 @@ console.log(infoArtist);
 
 function aboutArtistDisplay(){
     aboutArtistContainer.textContent = infoArtist;
+    aboutArtistContainer.style.backgroundColor = "rgba(50, 50, 50, 1)";
 }
