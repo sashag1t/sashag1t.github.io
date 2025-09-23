@@ -105,6 +105,7 @@ console.log(nextButton);
 nextButton.addEventListener("click", nextTrack)
 
 let currentIndex = 0;
+
 function previousTrack() {
     currentIndex = (currentIndex - 1 + trackList.length) % trackList.length;
     console.log(currentIndex);
@@ -155,4 +156,44 @@ function increaseVolume(){
     }
 }
 
+// // lyric animation
+// const lyricButton = document.querySelector("#lyric-button");
+// console.log(lyricButton);
+// lyricButton.addEventListener("click", lyricDisplay);
 
+// const lyricContainer = document.querySelector(".lyric-container");
+
+// const audioLyric = trackList[2];
+// console.log(audioLyric);
+
+// const lyricData = [
+//     {time: 14, text: "Lorem ipsum dolor sit."},
+//     {time: 20, text: "amet consectetur adipisicing elit. Doloribus, asperiores?"},
+//     {time: 23, text: "Perspiciatis, maiores."},
+//     {time: 26, text: "Lorem ipsum dolor sit amet."},
+//     {time: 30, text: "Illo animi aspernatur eligendi similique culpa iste."},
+//     {time: 35, text: "Quae non quas quis sequi enim eveniet quia cum placeat! Pariatur reprehenderit."},
+// ];
+// let currentLyric = 0;
+
+// audioLyric.addEventListener("timeupdate", lyricDisplay);
+
+// function lyricDisplay(no){
+//     if (currentLyric < lyricData.length) {
+//         const line = lyricData[no];
+    
+// }}
+
+const aboutArtistButton = document.querySelector("#about-artist");
+console.log(aboutArtistButton);
+aboutArtistButton.addEventListener("click", aboutArtistDisplay);
+
+const aboutArtistContainer = document.querySelector("#about-artist-container");
+console.log(aboutArtistContainer)
+
+const infoArtist = document.querySelector("#info-artist").textContent;
+console.log(infoArtist);
+
+function aboutArtistDisplay(){
+    aboutArtistContainer.textContent = infoArtist;
+}
