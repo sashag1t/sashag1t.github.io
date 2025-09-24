@@ -1,0 +1,169 @@
+/* https://colorhunt.co/palette/1a120b3c2a21d5cea3e5e5cb */
+
+body {
+  background-color: #1a120b;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #e5e5cb;
+  /* color: #3c2a21; */
+  font-size: 1.1rem;
+  gap: 1.5rem;
+}
+
+.outer {
+  border: 2px dashed #ffffff;
+  width: 400px;
+  min-height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  opacity: 1;
+  /* background-color: cornsilk; */
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease, rotate 0.6s linear;
+}
+
+button{
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-style: none;
+  background-color: aqua;
+  transition: background-color 0.6s ease, scale 0.6s ease;
+}
+button:hover{
+  background-color: rgb(50, 49, 47);
+  scale: 0.9;
+  rotate: 15deg;
+}
+
+input{
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: white 1rem splid;
+  border-width: 6px;
+  transition: background-color 0.6s ease, scale 0.6s ease;
+}
+input:hover{
+  border-color: green;
+}
+
+#duck-icon{
+  cursor: pointer;
+  transition: fill 0.4s ease;
+}
+
+#duck-icon:hover{
+  fill: aqua;
+}
+
+#my-duck{
+  transition: scale 0.5s ease;
+  /* cursor: pointer; */
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#my-duck:hover{
+  scale: 0.8;
+}
+.box{
+  background-color: purple;
+  animation-name: box-animation;
+  animation-duration: 2s ;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-width: 10px;
+}
+
+@keyframes box-animation {
+  0% {
+    background-color: purple;
+  }
+  20% {
+    background-color: rgb(167, 47, 167);
+  }
+  40% {
+    background-color: rgb(255, 0, 204);
+  }
+  70% {
+    background-color: rgb(255, 0, 98);
+  }
+  100% {
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+.loader{
+  width: 90px;
+  height: 90px;
+  border: 4px crimson solid;
+  border-top-color: blue;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+
+@keyframes jump {
+  0%{
+    translate: 0px 0px;
+  }
+  20%{
+    translate: 0px -60px;
+  }
+  40%{
+    translate: 0px 0px;
+  }
+  60%{
+    translate: 0px -30px;
+  }
+  80%{
+    translate: 0px 0px;
+  }
+  90%{
+    translate: 0px 0px;
+  }
+}
+
+#heart{
+  width: 60px;
+  animation: heartpump 0.6s linear infinite;
+  /* -> viet tat cuar animation-name-duration-... */
+}
+
+@keyframes heartpump {
+  0%,
+  100%{
+    scale: 1;
+  }
+  50%{
+    scale: 1.3;
+  }
+}
