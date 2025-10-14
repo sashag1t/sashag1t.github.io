@@ -2,16 +2,34 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 10rem;
+    /* justify-content: space-between; */
+    gap: 300px;
+    padding-left: 10rem;
+    /* padding-right: 10rem; */
+    /*padding-top: 10rem;
+    padding-bottom: 9rem; */
+    border: 1px white solid;
+    height: 100vh;
 
 }
 
 #portrait-img{
     width: 375px;
     height: 480px;
+    border-radius: 50px;
 }
 #title{
     font-size: 30px;
     padding-bottom: 2rem;
+}
+
+.left{
+    border: 1px white dashed;
+    border-radius: 50px;
+    padding: 2rem;
+    height: 80%;
+}
+.right{
+    border: 1px white dashed;
+    border-radius: 50px;
 }
