@@ -1,0 +1,50 @@
+body{
+    background-color: antiquewhite;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.parallax{
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 800px;
+}
+
+h1{
+    font-size: 100px;
+    color: yellow;
+    top: 8rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+h2{
+    font-size: 100px;
+    color: yellow;
+    top: 20rem;
+    /* left: 50rem; */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#text{
+    position: absolute;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    height: 100vh;
+}
+
+.second-part{
+    color: black;
+    position: relative;
+    background: rgb(15, 15, 15);
+    padding: 100px;
+}
