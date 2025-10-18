@@ -1,5 +1,5 @@
 body{
-    background-color: antiquewhite;
+    background-color: rgb(43, 43, 43);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -14,7 +14,10 @@ body{
     perspective: 800px;
 }
 
-
+.section1{
+    width: 100vh;
+    height: 100vh;
+}
 
 h1{
     font-size: 80px;
@@ -37,16 +40,6 @@ h2{
     color: yellow;
 } */
 
-#big-title{
-    position: absolute;
-    z-index: 7;
-}
-
-#smaller-title{
-    position: absolute;
-    z-index: 9;
-}
-
 
 .parallax img{
     position: absolute;
@@ -62,19 +55,24 @@ h2{
     transform: translateZ(100px);
     animation: backgroundPositionZ linear forwards;
     animation-timeline: view();
-    animation-range: entry 0% exit 99%;
+    animation-range: entry 20% exit 0%;
 }
 #midground{
     z-index: 3;
-    transform: translateZ2(400px);
-    animation: layerPositionZ linear forwards;
+    transform: translateZ(-70px);
+    animation: midgroundPositionZ linear forwards;
     animation-timeline: view();
-    animation-range: entry 0% exit 99%;
+    animation-range: entry 20% exit 0%;
 }
 #foreground{
     z-index: 5;
+    transform: translateZ(200px);
+    animation: foregroundPositionZ linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% exit 0%;
 }
 
+/* parallax image animation */
 @keyframes backgroundPositionZ {
     from{
         transform: translateZ(100px);
@@ -83,25 +81,52 @@ h2{
         transform: translateZ(0px);
     }
 }
-
-@keyframes layerPositionZ2 {
+@keyframes midgroundPositionZ {
     from{
-        transform: translateZ(-400px);
+        transform: translateZ(-70px);
     }
     to{
-        transform: translateZ(400px);
+        transform: translateZ(0px);
+    }
+}
+@keyframes foregroundPositionZ {
+    from{
+        transform: translateZ(200px) ;
+    }
+    to{
+        transform: translateZ(0px) ;
     }
 }
 
-@keyframes layerPositionZ3 {
+#big-title{
+    position: absolute;
+    z-index: 7;
+    transform: translateZ(0px);
+    opacity: 1;
+    animation: Title linear forwards;
+    animation-timeline: view();
+    animation-range: entry 100% exit 0%;
+}
+#smaller-title{
+    position: absolute;
+    z-index: 7;
+    transform: translateZ(0px);
+    opacity: 1;
+    animation: Title linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% exit 99%;
+}
+/* parallax title animation */
+@keyframes Title {
     from{
-        transform: translateZ(-500px);
+        transform: translateZ(0px);
+        opacity: 1;
     }
     to{
-        transform: translateZ(500px);
+        transform: translateZ(-900px);
+        opacity: 0;
     }
 }
-
 .second-part{
     color: rgb(255, 255, 255);
     position: relative;
