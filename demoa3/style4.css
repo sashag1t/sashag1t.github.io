@@ -161,6 +161,12 @@ h2{
     background: rgb(15, 15, 15);
     height: 150vh;
 }
+.section4{
+    color: rgb(255, 255, 255);
+    /* position: relative; */
+    background: rgb(15, 15, 15);
+    height: 150vh;
+}
 
 
 .inner-container{
@@ -186,7 +192,7 @@ h2{
     transform: translateY(0px);
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 50vh;
 }
 .main{
     height: max-content;
@@ -221,6 +227,7 @@ h2{
     align-items: center;
     justify-content: center;
     border: 1px white solid;
+    perspective: 800px;
 }
 .parallax-2 img{
     position: absolute;
@@ -229,11 +236,96 @@ h2{
     width: 100%;
     pointer-events: none;
     height: 100vh;
-}
-#person-separated{
-    transform: translateX(20px);
+    z-index: 5;
 }
 #text{
     position: absolute;
     left: 50rem;
+    color: yellow;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    animation: appear both;
+    transform: translateY(0px);
+    animation-timeline: view();
+    animation-range: entry 10% cover 100vh;
+    z-index: 6;
+}
+.bigger{
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+}
+#person-background{
+    z-index: 5;
+    transform: translateZ(-300px);
+    animation: backgroundPositionZ linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100vh;
+}
+#person-separated{
+    z-index: 6;
+    transform: translateZ(500px);
+    animation: personPositionZ linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100vh;
+}
+@keyframes personBackgroundPositionZ {
+    from{
+        transform: translateZ(-300px);
+    }
+    to{
+        transform: translateZ(0px);
+    }
+}
+@keyframes personPositionZ {
+    from{
+        transform: translateZ(500px);
+    }
+    to{
+        transform: translateZ(0px);
+    }
+}
+
+/* last section styling */
+.parallax-3{
+    position: relative;
+    width: 100%;
+    height: 300vh;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    border: 1px rgb(0, 34, 255) solid;
+    perspective: 800px;
+}
+.parallax-3 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    height: 100vh;
+    z-index: 5;
+}
+/* .last-img{
+    position: absolute;
+    z-index: 5;
+} */
+.stacked-reveal{
+    z-index: 6;
+    position: absolute;
+}
+.cards{
+    height: 100px;
+    width: 100px;
+    border: 1px yellow solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 50px);
+}
+.sticky-inner{
+    position: sticky;
+    z-index: 4;
+    top: 0;
 }
