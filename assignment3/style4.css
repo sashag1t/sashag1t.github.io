@@ -359,7 +359,9 @@ h2{
 /* In this part, as you already know, I faced some challenged achieving the desired effect. I want to apply the code from this video (https://youtu.be/4yBxb5RQxPs) to this last section. However there's some defferent in the position of my section that made it didn't work as expected. */
 
 /* I have worked for different methods. I tried to put the image inside a <div> and make it remain visible while scrolling and the text, which is the cards <div>, will appear one by one on top of the image along the Y axis and faking the translateY() animation. However, there's still some glitch that I couldn't fix. I'll work more on that. */
-/* Update on Thursday 23/10/2025: I found a better way to solve the problem which is to turn the animation into a video and play it along while scrolling down. However, it performs very jiggly animation and require etremely heavy mp4 file to perform better, which I can't commit to Github (here is an prototype of it if you want to check out:  I also cameback to the problem and try to solve it again by using more outside <div> container but it still didn't work properly. So I think this is the best version I can produce. Thank you for you support and for giving me a second chance*/
+
+/* Update on Thursday 23/10/2025: I found a way to solve the problem (or at least is what I thought) which is to turn the animation into a video and play it along while scrolling down. However, it performs very jiggly animation and require extremely heavy mp4 file for more fps and keyframe so that it can perform better, which I can't commit to Github (here is an prototype of it if you want to check out: https://sashag1t.github.io/demoa3/index.html ). I also cameback to the problem and try to solve it again by using more outside <div> container but it still didn't work properly. So I think this is the best version I can produce unfortunately. Thank you for you support and for giving me a second chance. */
+
 /* last section styling */
 .parallax-3{
     position: relative;
