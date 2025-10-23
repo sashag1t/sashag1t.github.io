@@ -112,6 +112,7 @@ h2{
     font-style: normal;
     width: max-content;
     height: max-content;
+    font-size: 2rem;
     padding: 2rem;
     margin-left: 5rem;
     transform: translateY(0px);
@@ -130,6 +131,7 @@ h2{
     font-family: "Zain", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 2rem;
     width: max-content;
     height: max-content;
     padding: 2rem;
